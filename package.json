@@ -2,14 +2,15 @@
   "name": "notihub",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "serve:shell": "ng serve shell --port 4200",
+    "serve:notifications": "cross-env NODE_OPTIONS=--max_old_space_size=4096 ng serve mfe-notifications --port 4201",
+    "serve:all": "concurrently -n \"shell,notifications\" -c \"blue,green\" \"npm:serve:shell\" \"npm:serve:notifications\"",
+    "build:shell": "ng build shell",
+    "build:notifications": "ng build mfe-notifications"
   },
   "private": true,
   "dependencies": {
+    "cross-env": "^7.0.3",
     "@angular/animations": "^18.2.0",
     "@angular/common": "^18.2.0",
     "@angular/compiler": "^18.2.0",
@@ -23,15 +24,20 @@
     "zone.js": "~0.14.10"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
+    "@angular-architects/module-federation": "^18.0.6",
+    "@angular-devkit/build-angular": "^18.2.21",
     "@angular/cli": "^18.2.21",
     "@angular/compiler-cli": "^18.2.0",
     "@types/jasmine": "~5.1.0",
+    "concurrently": "^9.2.1",
     "jasmine-core": "~5.2.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ngx-build-plus": "^18.0.0",
     "typescript": "~5.5.2"
   }
 }
