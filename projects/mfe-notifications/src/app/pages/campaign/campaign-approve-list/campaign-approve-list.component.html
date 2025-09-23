@@ -1,0 +1,468 @@
+<div class="main-container h-auto">
+  <div class="container-header gap-2 d-flex flex-column">
+
+    <div class="header-title d-flex flex-column gap-4 m-0">
+      <div class="gap-3 d-flex flex-column m-0">
+        <h4 class="fw-medium m-0" style="opacity: 85%; font-size: 20px; line-height: 28px;">Danh sách
+          chờ duyệt</h4>
+      </div>
+    </div>
+
+    <div>
+      <!--               enter campaign name-->
+      <label class="fs-14px fw-bolder">Tên Campaign/ ID</label>
+      <input type="text" class="form-control w-100" placeholder="Nhập tên Campaign/ ID">
+    </div>
+    <div class="row">
+      <div class="col">
+        <label class="fs-14px fw-bolder">Template sử dụng</label>
+        <select class="form-control form-select w-100" aria-label="Chọn từ danh sách">
+          <option value="Chọn từ danh sách" disabled selected>Chọn từ danh sách</option>
+          <option value="1">1</option>
+        </select>
+      </div>
+      <div class="col">
+        <label class="fs-14px fw-bolder">Kênh thông báo</label>
+        <select class="form-select form-control w-100" aria-label="Chọn từ danh sách">
+          <option value="Chọn từ danh sách" disabled selected>Chọn từ danh sách</option>
+          <option value="1">1</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <label class="fs-14px fw-bolder">Chế độ gửi</label>
+        <select class="form-select form-control w-100" aria-label="Chọn từ danh sách">
+          <option value="Chọn từ danh sách" disabled selected>Chọn từ danh sách</option>
+          <option value="1">1</option>
+        </select>
+      </div>
+      <div class="col">
+        <label class="fs-14px fw-bolder">Trạng thái PD</label>
+        <select class="form-select form-control w-100" aria-label="Chọn từ danh sách">
+          <option value="Chọn từ danh sách" disabled selected>Chọn từ danh sách</option>
+          <option value="1">1</option>
+        </select>
+      </div>
+
+      <div class="col">
+        <label class="fs-14px fw-bolder">Từ ngày</label>
+        <input type="date" name="" id="" class="form-control">
+      </div>
+      <div class="col">
+        <label class="fs-14px fw-bolder">Đến ngày ngày</label>
+        <input type="date" name="" id="" class="form-control">
+      </div>
+
+      <div class="d-flex gap-3 justify-content-end w-100 mt-2 py-2">
+
+        <button class="btn btn-primary d-flex justify-content-center align-items-center fw-medium"
+                style="width: auto;">Tìm kiếm
+
+          <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M9.5 14.625C12.6066 14.625 15.125 12.1066 15.125 9C15.125 5.8934 12.6066 3.375 9.5 3.375C6.3934 3.375 3.875 5.8934 3.875 9C3.875 12.1066 6.3934 14.625 9.5 14.625ZM9.5 15.75C13.2279 15.75 16.25 12.7279 16.25 9C16.25 5.27208 13.2279 2.25 9.5 2.25C5.77208 2.25 2.75 5.27208 2.75 9C2.75 12.7279 5.77208 15.75 9.5 15.75Z"
+                  fill="white"/>
+            <path d="M15.1023 14.6477C15.3219 14.4281 15.6781 14.4281 15.8977 14.6477L17.5979 16.3479C17.8175 16.5675 17.8175 16.9237 17.5979 17.1434C17.3782 17.363 17.022 17.363 16.8024 17.1434L15.1023 15.4432C14.8826 15.2236 14.8826 14.8674 15.1023 14.6477Z"
+                  fill="white"/>
+          </svg>
+
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-body py-3 px-2 h-auto">
+    <div class="w-100 mb-1">
+      <span style="font-size: 12px;">Tổng: <b>10,000</b> dòng</span>
+
+    </div>
+
+    <div class="table-responsive w-100">
+      <table class="table table-hover" style="font-size: 12px;">
+        <thead class="table-light" style="background: #F1F1F4">
+        <tr>
+          <th scope="col" style="width: 40px;">
+            <input type="checkbox" class="form-check-input">
+          </th>
+          <th scope="col">ID</th>
+          <th scope="col">Tên Campaign</th>
+          <th scope="col">Template</th>
+          <th scope="col">Kênh thông báo</th>
+          <th scope="col">Chế độ gửi</th>
+          <th scope="col">Thời gian tạo</th>
+          <th scope="col">Thời gian cập nhật</th>
+          <th scope="col">Người tạo</th>
+          <th scope="col">Người duyệt</th>
+          <th scope="col">Trạng thái PD</th>
+          <th scope="col" style="width: 52px;">Hành động</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><input type="checkbox" class="form-check-input"></td>
+          <td>1</td>
+          <td>Khuyến mại thẻ TD</td>
+          <td>KM The TD</td>
+          <td>SMS; App (LPBank)</td>
+          <td>Gửi ngay</td>
+          <td>01/01/2025<br>10:00:05</td>
+          <td>01/01/2025<br>10:00:05</td>
+          <td>annv</td>
+          <td>-</td>
+          <td><span class="badge">Chờ duyệt</span></td>
+          <td>
+            <div class="d-flex flex-lg-nowrap gap-2">
+              <div class="btn btn-secondary d-flex justify-content-center align-items-center"
+                   style="padding: 6px;width: 28px; height: 28px;" (click)="goToDetail()">
+
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.00001 11.6869C6.40668 11.6869 5.11334 10.3936 5.11334 8.80024C5.11334 7.20691 6.40668 5.91357 8.00001 5.91357C9.59334 5.91357 10.8867 7.20691 10.8867 8.80024C10.8867 10.3936 9.59334 11.6869 8.00001 11.6869ZM8.00001 6.91357C6.96001 6.91357 6.11334 7.76024 6.11334 8.80024C6.11334 9.84024 6.96001 10.6869 8.00001 10.6869C9.04001 10.6869 9.88667 9.84024 9.88667 8.80024C9.88667 7.76024 9.04001 6.91357 8.00001 6.91357Z"
+                        fill="#6D371A"/>
+                  <path d="M8.00003 14.8133C5.49337 14.8133 3.1267 13.3466 1.50003 10.8C0.793365 9.69995 0.793365 7.90662 1.50003 6.79995C3.13337 4.25329 5.50003 2.78662 8.00003 2.78662C10.5 2.78662 12.8667 4.25329 14.4934 6.79995C15.2 7.89995 15.2 9.69329 14.4934 10.8C12.8667 13.3466 10.5 14.8133 8.00003 14.8133ZM8.00003 3.78662C5.8467 3.78662 3.7867 5.07995 2.3467 7.33995C1.8467 8.11996 1.8467 9.47995 2.3467 10.26C3.7867 12.52 5.8467 13.8133 8.00003 13.8133C10.1534 13.8133 12.2134 12.52 13.6534 10.26C14.1534 9.47995 14.1534 8.11996 13.6534 7.33995C12.2134 5.07995 10.1534 3.78662 8.00003 3.78662Z"
+                        fill="#6D371A"/>
+                </svg>
+
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="form-check-input"></td>
+          <td>2</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>
+            <span class="badge success">Đã duyệt</span>
+          </td>
+
+          <td>
+            <div class="d-flex flex-lg-nowrap gap-2">
+              <div class="btn btn-secondary d-flex justify-content-center align-items-center"
+                   style="padding: 6px;width: 28px; height: 28px;" (click)="goToDetail()">
+
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.00001 11.6869C6.40668 11.6869 5.11334 10.3936 5.11334 8.80024C5.11334 7.20691 6.40668 5.91357 8.00001 5.91357C9.59334 5.91357 10.8867 7.20691 10.8867 8.80024C10.8867 10.3936 9.59334 11.6869 8.00001 11.6869ZM8.00001 6.91357C6.96001 6.91357 6.11334 7.76024 6.11334 8.80024C6.11334 9.84024 6.96001 10.6869 8.00001 10.6869C9.04001 10.6869 9.88667 9.84024 9.88667 8.80024C9.88667 7.76024 9.04001 6.91357 8.00001 6.91357Z"
+                        fill="#6D371A"/>
+                  <path d="M8.00003 14.8133C5.49337 14.8133 3.1267 13.3466 1.50003 10.8C0.793365 9.69995 0.793365 7.90662 1.50003 6.79995C3.13337 4.25329 5.50003 2.78662 8.00003 2.78662C10.5 2.78662 12.8667 4.25329 14.4934 6.79995C15.2 7.89995 15.2 9.69329 14.4934 10.8C12.8667 13.3466 10.5 14.8133 8.00003 14.8133ZM8.00003 3.78662C5.8467 3.78662 3.7867 5.07995 2.3467 7.33995C1.8467 8.11996 1.8467 9.47995 2.3467 10.26C3.7867 12.52 5.8467 13.8133 8.00003 13.8133C10.1534 13.8133 12.2134 12.52 13.6534 10.26C14.1534 9.47995 14.1534 8.11996 13.6534 7.33995C12.2134 5.07995 10.1534 3.78662 8.00003 3.78662Z"
+                        fill="#6D371A"/>
+                </svg>
+
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="form-check-input"></td>
+          <td>3</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+
+          <td><span class="badge failure">Đã hủy</span>
+          </td>
+          <td>
+            <div class="d-flex flex-lg-nowrap gap-2">
+              <div class="btn btn-secondary d-flex justify-content-center align-items-center"
+                   style="padding: 6px;width: 28px; height: 28px;" (click)="goToDetail()">
+
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.00001 11.6869C6.40668 11.6869 5.11334 10.3936 5.11334 8.80024C5.11334 7.20691 6.40668 5.91357 8.00001 5.91357C9.59334 5.91357 10.8867 7.20691 10.8867 8.80024C10.8867 10.3936 9.59334 11.6869 8.00001 11.6869ZM8.00001 6.91357C6.96001 6.91357 6.11334 7.76024 6.11334 8.80024C6.11334 9.84024 6.96001 10.6869 8.00001 10.6869C9.04001 10.6869 9.88667 9.84024 9.88667 8.80024C9.88667 7.76024 9.04001 6.91357 8.00001 6.91357Z"
+                        fill="#6D371A"/>
+                  <path d="M8.00003 14.8133C5.49337 14.8133 3.1267 13.3466 1.50003 10.8C0.793365 9.69995 0.793365 7.90662 1.50003 6.79995C3.13337 4.25329 5.50003 2.78662 8.00003 2.78662C10.5 2.78662 12.8667 4.25329 14.4934 6.79995C15.2 7.89995 15.2 9.69329 14.4934 10.8C12.8667 13.3466 10.5 14.8133 8.00003 14.8133ZM8.00003 3.78662C5.8467 3.78662 3.7867 5.07995 2.3467 7.33995C1.8467 8.11996 1.8467 9.47995 2.3467 10.26C3.7867 12.52 5.8467 13.8133 8.00003 13.8133C10.1534 13.8133 12.2134 12.52 13.6534 10.26C14.1534 9.47995 14.1534 8.11996 13.6534 7.33995C12.2134 5.07995 10.1534 3.78662 8.00003 3.78662Z"
+                        fill="#6D371A"/>
+                </svg>
+
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="form-check-input"></td>
+          <td>3</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+
+          <td><span class="badge failure">Đã hủy</span>
+          </td>
+          <td>
+            <div class="d-flex flex-lg-nowrap gap-2">
+              <div class="btn btn-secondary d-flex justify-content-center align-items-center"
+                   style="padding: 6px;width: 28px; height: 28px;"  (click)="goToDetail()">
+
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.00001 11.6869C6.40668 11.6869 5.11334 10.3936 5.11334 8.80024C5.11334 7.20691 6.40668 5.91357 8.00001 5.91357C9.59334 5.91357 10.8867 7.20691 10.8867 8.80024C10.8867 10.3936 9.59334 11.6869 8.00001 11.6869ZM8.00001 6.91357C6.96001 6.91357 6.11334 7.76024 6.11334 8.80024C6.11334 9.84024 6.96001 10.6869 8.00001 10.6869C9.04001 10.6869 9.88667 9.84024 9.88667 8.80024C9.88667 7.76024 9.04001 6.91357 8.00001 6.91357Z"
+                        fill="#6D371A"/>
+                  <path d="M8.00003 14.8133C5.49337 14.8133 3.1267 13.3466 1.50003 10.8C0.793365 9.69995 0.793365 7.90662 1.50003 6.79995C3.13337 4.25329 5.50003 2.78662 8.00003 2.78662C10.5 2.78662 12.8667 4.25329 14.4934 6.79995C15.2 7.89995 15.2 9.69329 14.4934 10.8C12.8667 13.3466 10.5 14.8133 8.00003 14.8133ZM8.00003 3.78662C5.8467 3.78662 3.7867 5.07995 2.3467 7.33995C1.8467 8.11996 1.8467 9.47995 2.3467 10.26C3.7867 12.52 5.8467 13.8133 8.00003 13.8133C10.1534 13.8133 12.2134 12.52 13.6534 10.26C14.1534 9.47995 14.1534 8.11996 13.6534 7.33995C12.2134 5.07995 10.1534 3.78662 8.00003 3.78662Z"
+                        fill="#6D371A"/>
+                </svg>
+
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="form-check-input"></td>
+          <td>3</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+
+          <td><span class="badge failure">Đã hủy</span>
+          </td>
+          <td>
+            <div class="d-flex flex-lg-nowrap gap-2">
+              <div class="btn btn-secondary d-flex justify-content-center align-items-center"
+                   style="padding: 6px;width: 28px; height: 28px;"  (click)="goToDetail()">
+
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.00001 11.6869C6.40668 11.6869 5.11334 10.3936 5.11334 8.80024C5.11334 7.20691 6.40668 5.91357 8.00001 5.91357C9.59334 5.91357 10.8867 7.20691 10.8867 8.80024C10.8867 10.3936 9.59334 11.6869 8.00001 11.6869ZM8.00001 6.91357C6.96001 6.91357 6.11334 7.76024 6.11334 8.80024C6.11334 9.84024 6.96001 10.6869 8.00001 10.6869C9.04001 10.6869 9.88667 9.84024 9.88667 8.80024C9.88667 7.76024 9.04001 6.91357 8.00001 6.91357Z"
+                        fill="#6D371A"/>
+                  <path d="M8.00003 14.8133C5.49337 14.8133 3.1267 13.3466 1.50003 10.8C0.793365 9.69995 0.793365 7.90662 1.50003 6.79995C3.13337 4.25329 5.50003 2.78662 8.00003 2.78662C10.5 2.78662 12.8667 4.25329 14.4934 6.79995C15.2 7.89995 15.2 9.69329 14.4934 10.8C12.8667 13.3466 10.5 14.8133 8.00003 14.8133ZM8.00003 3.78662C5.8467 3.78662 3.7867 5.07995 2.3467 7.33995C1.8467 8.11996 1.8467 9.47995 2.3467 10.26C3.7867 12.52 5.8467 13.8133 8.00003 13.8133C10.1534 13.8133 12.2134 12.52 13.6534 10.26C14.1534 9.47995 14.1534 8.11996 13.6534 7.33995C12.2134 5.07995 10.1534 3.78662 8.00003 3.78662Z"
+                        fill="#6D371A"/>
+                </svg>
+
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="form-check-input"></td>
+          <td>3</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+
+          <td><span class="badge failure">Đã hủy</span>
+          </td>
+          <td>
+            <div class="d-flex flex-lg-nowrap gap-2">
+              <div class="btn btn-secondary d-flex justify-content-center align-items-center"
+                   style="padding: 6px;width: 28px; height: 28px;"  (click)="goToDetail()">
+
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.00001 11.6869C6.40668 11.6869 5.11334 10.3936 5.11334 8.80024C5.11334 7.20691 6.40668 5.91357 8.00001 5.91357C9.59334 5.91357 10.8867 7.20691 10.8867 8.80024C10.8867 10.3936 9.59334 11.6869 8.00001 11.6869ZM8.00001 6.91357C6.96001 6.91357 6.11334 7.76024 6.11334 8.80024C6.11334 9.84024 6.96001 10.6869 8.00001 10.6869C9.04001 10.6869 9.88667 9.84024 9.88667 8.80024C9.88667 7.76024 9.04001 6.91357 8.00001 6.91357Z"
+                        fill="#6D371A"/>
+                  <path d="M8.00003 14.8133C5.49337 14.8133 3.1267 13.3466 1.50003 10.8C0.793365 9.69995 0.793365 7.90662 1.50003 6.79995C3.13337 4.25329 5.50003 2.78662 8.00003 2.78662C10.5 2.78662 12.8667 4.25329 14.4934 6.79995C15.2 7.89995 15.2 9.69329 14.4934 10.8C12.8667 13.3466 10.5 14.8133 8.00003 14.8133ZM8.00003 3.78662C5.8467 3.78662 3.7867 5.07995 2.3467 7.33995C1.8467 8.11996 1.8467 9.47995 2.3467 10.26C3.7867 12.52 5.8467 13.8133 8.00003 13.8133C10.1534 13.8133 12.2134 12.52 13.6534 10.26C14.1534 9.47995 14.1534 8.11996 13.6534 7.33995C12.2134 5.07995 10.1534 3.78662 8.00003 3.78662Z"
+                        fill="#6D371A"/>
+                </svg>
+
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="form-check-input"></td>
+          <td>3</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+
+          <td><span class="badge failure">Đã hủy</span>
+          </td>
+          <td>
+            <div class="d-flex flex-lg-nowrap gap-2">
+              <div class="btn btn-secondary d-flex justify-content-center align-items-center"
+                   style="padding: 6px;width: 28px; height: 28px;" (click)="goToDetail()">
+
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.00001 11.6869C6.40668 11.6869 5.11334 10.3936 5.11334 8.80024C5.11334 7.20691 6.40668 5.91357 8.00001 5.91357C9.59334 5.91357 10.8867 7.20691 10.8867 8.80024C10.8867 10.3936 9.59334 11.6869 8.00001 11.6869ZM8.00001 6.91357C6.96001 6.91357 6.11334 7.76024 6.11334 8.80024C6.11334 9.84024 6.96001 10.6869 8.00001 10.6869C9.04001 10.6869 9.88667 9.84024 9.88667 8.80024C9.88667 7.76024 9.04001 6.91357 8.00001 6.91357Z"
+                        fill="#6D371A"/>
+                  <path d="M8.00003 14.8133C5.49337 14.8133 3.1267 13.3466 1.50003 10.8C0.793365 9.69995 0.793365 7.90662 1.50003 6.79995C3.13337 4.25329 5.50003 2.78662 8.00003 2.78662C10.5 2.78662 12.8667 4.25329 14.4934 6.79995C15.2 7.89995 15.2 9.69329 14.4934 10.8C12.8667 13.3466 10.5 14.8133 8.00003 14.8133ZM8.00003 3.78662C5.8467 3.78662 3.7867 5.07995 2.3467 7.33995C1.8467 8.11996 1.8467 9.47995 2.3467 10.26C3.7867 12.52 5.8467 13.8133 8.00003 13.8133C10.1534 13.8133 12.2134 12.52 13.6534 10.26C14.1534 9.47995 14.1534 8.11996 13.6534 7.33995C12.2134 5.07995 10.1534 3.78662 8.00003 3.78662Z"
+                        fill="#6D371A"/>
+                </svg>
+
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="form-check-input"></td>
+          <td>3</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+
+          <td><span class="badge failure">Đã hủy</span>
+          </td>
+          <td>
+            <div class="d-flex flex-lg-nowrap gap-2">
+              <div class="btn btn-secondary d-flex justify-content-center align-items-center"
+                   style="padding: 6px;width: 28px; height: 28px;" (click)="goToDetail()">
+
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.00001 11.6869C6.40668 11.6869 5.11334 10.3936 5.11334 8.80024C5.11334 7.20691 6.40668 5.91357 8.00001 5.91357C9.59334 5.91357 10.8867 7.20691 10.8867 8.80024C10.8867 10.3936 9.59334 11.6869 8.00001 11.6869ZM8.00001 6.91357C6.96001 6.91357 6.11334 7.76024 6.11334 8.80024C6.11334 9.84024 6.96001 10.6869 8.00001 10.6869C9.04001 10.6869 9.88667 9.84024 9.88667 8.80024C9.88667 7.76024 9.04001 6.91357 8.00001 6.91357Z"
+                        fill="#6D371A"/>
+                  <path d="M8.00003 14.8133C5.49337 14.8133 3.1267 13.3466 1.50003 10.8C0.793365 9.69995 0.793365 7.90662 1.50003 6.79995C3.13337 4.25329 5.50003 2.78662 8.00003 2.78662C10.5 2.78662 12.8667 4.25329 14.4934 6.79995C15.2 7.89995 15.2 9.69329 14.4934 10.8C12.8667 13.3466 10.5 14.8133 8.00003 14.8133ZM8.00003 3.78662C5.8467 3.78662 3.7867 5.07995 2.3467 7.33995C1.8467 8.11996 1.8467 9.47995 2.3467 10.26C3.7867 12.52 5.8467 13.8133 8.00003 13.8133C10.1534 13.8133 12.2134 12.52 13.6534 10.26C14.1534 9.47995 14.1534 8.11996 13.6534 7.33995C12.2134 5.07995 10.1534 3.78662 8.00003 3.78662Z"
+                        fill="#6D371A"/>
+                </svg>
+
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="form-check-input"></td>
+          <td>3</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+
+          <td><span class="badge failure">Đã hủy</span>
+          </td>
+          <td>
+            <div class="d-flex flex-lg-nowrap gap-2">
+              <div class="btn btn-secondary d-flex justify-content-center align-items-center"
+                   style="padding: 6px;width: 28px; height: 28px;" (click)="goToDetail()">
+
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.00001 11.6869C6.40668 11.6869 5.11334 10.3936 5.11334 8.80024C5.11334 7.20691 6.40668 5.91357 8.00001 5.91357C9.59334 5.91357 10.8867 7.20691 10.8867 8.80024C10.8867 10.3936 9.59334 11.6869 8.00001 11.6869ZM8.00001 6.91357C6.96001 6.91357 6.11334 7.76024 6.11334 8.80024C6.11334 9.84024 6.96001 10.6869 8.00001 10.6869C9.04001 10.6869 9.88667 9.84024 9.88667 8.80024C9.88667 7.76024 9.04001 6.91357 8.00001 6.91357Z"
+                        fill="#6D371A"/>
+                  <path d="M8.00003 14.8133C5.49337 14.8133 3.1267 13.3466 1.50003 10.8C0.793365 9.69995 0.793365 7.90662 1.50003 6.79995C3.13337 4.25329 5.50003 2.78662 8.00003 2.78662C10.5 2.78662 12.8667 4.25329 14.4934 6.79995C15.2 7.89995 15.2 9.69329 14.4934 10.8C12.8667 13.3466 10.5 14.8133 8.00003 14.8133ZM8.00003 3.78662C5.8467 3.78662 3.7867 5.07995 2.3467 7.33995C1.8467 8.11996 1.8467 9.47995 2.3467 10.26C3.7867 12.52 5.8467 13.8133 8.00003 13.8133C10.1534 13.8133 12.2134 12.52 13.6534 10.26C14.1534 9.47995 14.1534 8.11996 13.6534 7.33995C12.2134 5.07995 10.1534 3.78662 8.00003 3.78662Z"
+                        fill="#6D371A"/>
+                </svg>
+
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="form-check-input"></td>
+          <td>3</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+          <td>Lorem ipsum</td>
+
+          <td><span class="badge failure">Đã hủy</span>
+          </td>
+          <td>
+            <div class="d-flex flex-lg-nowrap gap-2">
+              <div class="btn btn-secondary d-flex justify-content-center align-items-center"
+                   style="padding: 6px;width: 28px; height: 28px;" (click)="goToDetail()">
+
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8.00001 11.6869C6.40668 11.6869 5.11334 10.3936 5.11334 8.80024C5.11334 7.20691 6.40668 5.91357 8.00001 5.91357C9.59334 5.91357 10.8867 7.20691 10.8867 8.80024C10.8867 10.3936 9.59334 11.6869 8.00001 11.6869ZM8.00001 6.91357C6.96001 6.91357 6.11334 7.76024 6.11334 8.80024C6.11334 9.84024 6.96001 10.6869 8.00001 10.6869C9.04001 10.6869 9.88667 9.84024 9.88667 8.80024C9.88667 7.76024 9.04001 6.91357 8.00001 6.91357Z"
+                        fill="#6D371A"/>
+                  <path d="M8.00003 14.8133C5.49337 14.8133 3.1267 13.3466 1.50003 10.8C0.793365 9.69995 0.793365 7.90662 1.50003 6.79995C3.13337 4.25329 5.50003 2.78662 8.00003 2.78662C10.5 2.78662 12.8667 4.25329 14.4934 6.79995C15.2 7.89995 15.2 9.69329 14.4934 10.8C12.8667 13.3466 10.5 14.8133 8.00003 14.8133ZM8.00003 3.78662C5.8467 3.78662 3.7867 5.07995 2.3467 7.33995C1.8467 8.11996 1.8467 9.47995 2.3467 10.26C3.7867 12.52 5.8467 13.8133 8.00003 13.8133C10.1534 13.8133 12.2134 12.52 13.6534 10.26C14.1534 9.47995 14.1534 8.11996 13.6534 7.33995C12.2134 5.07995 10.1534 3.78662 8.00003 3.78662Z"
+                        fill="#6D371A"/>
+                </svg>
+
+              </div>
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
+      <div class="row w-100">
+        <div class="col-2">
+
+        </div>
+        <div class="col d-flex justify-content-center ">
+
+          <nav aria-label="Page navigation">
+            <ul class="pagination pagination-sm mb-0 gap-2">
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Previous" style="color: #6c757d;">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item active">
+                <a class="page-link" href="#"
+                   style="background-color: #8B4513; border-color: #8B4513;">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#" style="color: #6c757d;">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#" style="color: #6c757d;">3</a>
+              </li>
+              <li class="page-item">
+                                <span class="page-link"
+                                      style="color: #6c757d; border: none; background: none;">...</span>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#" aria-label="Next" style="color: #6c757d;">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="col-2 px-0">
+          <div class="d-flex justify-content-end">
+            <select class="form-select form-select-sm form-control w-75 text-black-50"
+                    style="width: auto; font-size: 12px;">
+              <option selected>10 dòng / trang</option>
+              <option value="25">25 dòng / trang</option>
+              <option value="50">50 dòng / trang</option>
+              <option value="100">100 dòng / trang</option>
+            </select>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>

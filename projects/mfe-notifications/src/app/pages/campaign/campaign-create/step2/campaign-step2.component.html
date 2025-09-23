@@ -1,0 +1,115 @@
+<div class="main-container">
+  <div class="container-header d-flex flex-column gap-2">
+
+    <div class="header-title d-flex flex-column gap-4 m-0">
+      <div class="gap-3 d-flex flex-column m-0">
+        <h4 class="fw-medium m-0">Tạo Campaign</h4>
+      </div>
+    </div>
+
+    <div class="step-bar">
+      <div class="step-element finished">
+        <div class="frame">
+          <div class="rectangle none"></div>
+          <div class="step-icon d-flex justify-content-center">
+            <div class="checks">
+              <svg width="11" height="8" viewBox="0 0 11 8" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M10.1196 0.154651C10.3793 0.381951 10.4056 0.776801 10.1784 1.03658L4.70965 7.28656C4.48315 7.54537 4.09015 7.57262 3.83017 7.3475L0.548922 4.50662C0.287959 4.28069 0.259572 3.88594 0.485509 3.625C0.711447 3.36406 1.10616 3.33562 1.36712 3.56156L4.17834 5.99556L9.23765 0.213445C9.46496 -0.0463298 9.85983 -0.0726548 10.1196 0.154651Z"
+                      fill="white" />
+              </svg>
+            </div>
+          </div>
+          <div class="rectangle after"></div>
+        </div>
+        <div class="frame-text">
+          <span class="">Tạo nội dung</span>
+        </div>
+      </div>
+
+      <div class="step-element processing">
+        <div class="frame">
+          <div class="rectangle"></div>
+          <div class="step-icon">
+            <div class="checks">
+              <span>2</span>
+            </div>
+          </div>
+          <div class="rectangle after"></div>
+        </div>
+        <div class="frame-text">
+          <span class="">Danh sách người nhận</span>
+        </div>
+      </div>
+
+      <div class="step-element upcomming">
+        <div class="frame">
+          <div class="rectangle"></div>
+          <div class="step-icon">
+            <div class="checks">
+              <span>3</span>
+            </div>
+          </div>
+          <div class="rectangle"></div>
+        </div>
+        <div class="frame-text">
+          <span class="">Thời gian gửi</span>
+        </div>
+      </div>
+
+      <div class="step-element upcomming">
+        <div class="frame">
+          <div class="rectangle"></div>
+          <div class="step-icon">
+            <div class="checks">
+              <span>4</span>
+            </div>
+          </div>
+          <div class="rectangle none"></div>
+        </div>
+        <div class="frame-text">
+          <span class="">Xác nhận</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-body gap-20px">
+    <div class="send-all-button d-flex" style="gap: 16px;">
+      <span class="fw-bold fs-14px">Gửi tất cả Khách hàng</span>
+      <div class="toggle-button" id="toggleButton">
+        <div class="toggle-track" id="toggleTrack">
+          <div class="toggle-handle" id="toggleHandle"></div>
+        </div>
+      </div>
+    </div>
+    <a class="btn btn-success d-flex justify-content-center align-items-center" style="width: 189px; height: 42px;">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.80963 1.91919C9.12626 1.91919 9.38293 2.17587 9.38293 2.49249V10.877C9.38293 11.1937 9.12626 11.4503 8.80963 11.4503C8.493 11.4503 8.23633 11.1937 8.23633 10.877V2.49249C8.23633 2.17587 8.493 1.91919 8.80963 1.91919Z"
+              fill="white" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M8.80963 0.75L12.7265 4.66686C12.9504 4.89075 12.9504 5.25375 12.7265 5.47763C12.5026 5.70152 12.1396 5.70152 11.9157 5.47763L8.80963 2.37154L5.70354 5.47763C5.47965 5.70152 5.11666 5.70152 4.89277 5.47763C4.66888 5.25375 4.66888 4.89075 4.89277 4.66686L8.80963 0.75Z"
+              fill="white" />
+        <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M2.25002 10.5C2.56689 10.5 2.82377 10.7569 2.82377 11.0737V14.0737C2.82377 14.2944 2.8947 14.6382 3.09064 14.9104C3.26552 15.1533 3.56202 15.375 4.12502 15.375H13.5C13.7207 15.375 14.0645 15.3041 14.3366 15.1081C14.5795 14.9333 14.8013 14.6368 14.8013 14.0737V11.0737C14.8013 10.7569 15.0581 10.5 15.375 10.5C15.6919 10.5 15.9488 10.7569 15.9488 11.0737V14.0737C15.9488 15.0107 15.5455 15.6517 15.0071 16.0394C14.498 16.4059 13.9043 16.5225 13.5 16.5225H4.12502C3.18802 16.5225 2.54702 16.1192 2.1594 15.5809C1.79284 15.0718 1.67627 14.4781 1.67627 14.0737V11.0737C1.67627 10.7569 1.93315 10.5 2.25002 10.5Z"
+              fill="white" />
+      </svg>
+      <span class="fs-14px fw-semibold">Thêm từ file excel</span>
+    </a>
+    <div class="button-group gap-12px d-flex justify-content-end">
+      <button (click)="onBack()" type="button" class="btn btn-secondary">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M7.17758 14.115C7.03508 14.115 6.89258 14.0625 6.78008 13.95L2.22758 9.39753C2.01008 9.18003 2.01008 8.82003 2.22758 8.60253L6.78008 4.05003C6.99758 3.83253 7.35758 3.83253 7.57508 4.05003C7.79258 4.26753 7.79258 4.62753 7.57508 4.84503L3.42008 9.00003L7.57508 13.155C7.79258 13.3725 7.79258 13.7325 7.57508 13.95C7.47008 14.0625 7.32008 14.115 7.17758 14.115Z"
+            fill="#6D371A" />
+          <path
+            d="M15.3749 9.5625H2.75244C2.44494 9.5625 2.18994 9.3075 2.18994 9C2.18994 8.6925 2.44494 8.4375 2.75244 8.4375H15.3749C15.6824 8.4375 15.9374 8.6925 15.9374 9C15.9374 9.3075 15.6824 9.5625 15.3749 9.5625Z"
+            fill="#6D371A" />
+        </svg>
+      </button>
+      <button (click)="onContinue()" type="submit" class="btn btn-primary fs-14px fw-semibold">Tiếp tục</button>
+    </div>
+  </div>
+</div>

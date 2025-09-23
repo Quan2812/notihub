@@ -1,0 +1,322 @@
+<div class="main-container">
+  <div class="container-header d-flex flex-column gap-2">
+
+    <div class="header-title d-flex justify-content-between align-items-center gap-4 m-0">
+      <div class="gap-3 d-flex flex-column m-0">
+        <h4 class="fw-medium m-0">Xem chi tiết Campaign</h4>
+      </div>
+      <div class="d-flex" style="gap: 12px">
+        <div (click)="updateCampaign()" class="btn btn-info action-btn">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.25 17.0625H6.75C2.6775 17.0625 0.9375 15.3225 0.9375 11.25V6.75C0.9375 2.6775 2.6775 0.9375 6.75 0.9375H8.25C8.5575 0.9375 8.8125 1.1925 8.8125 1.5C8.8125 1.8075 8.5575 2.0625 8.25 2.0625H6.75C3.2925 2.0625 2.0625 3.2925 2.0625 6.75V11.25C2.0625 14.7075 3.2925 15.9375 6.75 15.9375H11.25C14.7075 15.9375 15.9375 14.7075 15.9375 11.25V9.75C15.9375 9.4425 16.1925 9.1875 16.5 9.1875C16.8075 9.1875 17.0625 9.4425 17.0625 9.75V11.25C17.0625 15.3225 15.3225 17.0625 11.25 17.0625Z" fill="white"/>
+            <path d="M6.375 13.2674C5.9175 13.2674 5.4975 13.1024 5.19 12.8024C4.8225 12.4349 4.665 11.9024 4.7475 11.3399L5.07 9.08242C5.13 8.64742 5.415 8.08492 5.7225 7.77742L11.6325 1.86742C13.125 0.374922 14.64 0.374922 16.1325 1.86742C16.95 2.68492 17.3175 3.51742 17.2425 4.34992C17.175 5.02492 16.815 5.68492 16.1325 6.35992L10.2225 12.2699C9.915 12.5774 9.3525 12.8624 8.9175 12.9224L6.66 13.2449C6.5625 13.2674 6.465 13.2674 6.375 13.2674ZM12.4275 2.66242L6.5175 8.57242C6.375 8.71492 6.21 9.04492 6.18 9.23992L5.8575 11.4974C5.8275 11.7149 5.8725 11.8949 5.985 12.0074C6.0975 12.1199 6.2775 12.1649 6.495 12.1349L8.7525 11.8124C8.9475 11.7824 9.285 11.6174 9.42 11.4749L15.33 5.56492C15.8175 5.07742 16.0725 4.64242 16.11 4.23742C16.155 3.74992 15.9 3.23242 15.33 2.65492C14.13 1.45492 13.305 1.79242 12.4275 2.66242Z" fill="white"/>
+            <path d="M14.8874 7.3727C14.8349 7.3727 14.7824 7.3652 14.7374 7.3502C12.7649 6.7952 11.1974 5.2277 10.6424 3.2552C10.5599 2.9552 10.7324 2.6477 11.0324 2.5577C11.3324 2.4752 11.6399 2.6477 11.7224 2.9477C12.1724 4.5452 13.4399 5.8127 15.0374 6.2627C15.3374 6.3452 15.5099 6.6602 15.4274 6.9602C15.3599 7.2152 15.1349 7.3727 14.8874 7.3727Z" fill="white"/>
+          </svg>
+        </div>
+
+        <div class="btn btn-light-red action-btn">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.5 3.94403C1.5 3.6276 1.75688 3.37109 2.07375 3.37109H15.9487C16.2656 3.37109 16.5225 3.6276 16.5225 3.94403C16.5225 4.26045 16.2656 4.51696 15.9487 4.51696H2.07375C1.75688 4.51696 1.5 4.26045 1.5 3.94403Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.86437 2.50024C7.61218 2.85001 7.5225 3.28694 7.5225 3.56972C7.5225 3.88614 7.26562 4.14265 6.94875 4.14265C6.63188 4.14265 6.375 3.88614 6.375 3.56972C6.375 3.10357 6.51032 2.41711 6.93313 1.83071C7.377 1.2151 8.11175 0.75 9.19875 0.75C10.2857 0.75 11.0205 1.2151 11.4644 1.83071C11.8872 2.41711 12.0225 3.10357 12.0225 3.56972C12.0225 3.88614 11.7656 4.14265 11.4488 4.14265C11.1319 4.14265 10.875 3.88614 10.875 3.56972C10.875 3.28694 10.7853 2.85001 10.5331 2.50024C10.302 2.17969 9.91175 1.89586 9.19875 1.89586C8.48575 1.89586 8.0955 2.17969 7.86437 2.50024Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75002 14.0776L3.00146 3.9865L4.14583 3.90186L4.8974 14.0335V14.0547C4.8974 14.2751 4.96832 14.6184 5.16427 14.8902C5.33914 15.1327 5.63564 15.3541 6.19865 15.3541H12.1986C12.4193 15.3541 12.7631 15.2833 13.0353 15.0876C13.2782 14.913 13.4999 14.6169 13.4999 14.0547C13.4999 13.2904 13.5945 10.9329 13.6879 8.69476C13.7041 8.30592 13.7203 7.92093 13.736 7.54813C13.8114 5.75322 13.8749 4.24109 13.8749 3.94418H15.0224C15.0224 4.26771 14.9572 5.81746 14.8819 7.6097C14.8663 7.97983 14.8503 8.36031 14.8344 8.74246C14.7403 10.9979 14.6474 13.3212 14.6474 14.0547C14.6474 14.9904 14.2441 15.6305 13.7058 16.0175C13.1967 16.3836 12.603 16.5 12.1986 16.5H6.19865C5.26165 16.5 4.62065 16.0973 4.23303 15.5597C3.87333 15.0608 3.75435 14.4806 3.75002 14.0776Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.69875 7.86475C8.01562 7.86475 8.2725 8.12126 8.2725 8.43768V13.3057C8.2725 13.6221 8.01562 13.8787 7.69875 13.8787C7.38188 13.8787 7.125 13.6221 7.125 13.3057V8.43768C7.125 8.12126 7.38188 7.86475 7.69875 7.86475Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6988 7.86475C11.0156 7.86475 11.2725 8.12126 11.2725 8.43768V13.3057C11.2725 13.6221 11.0156 13.8787 10.6988 13.8787C10.3819 13.8787 10.125 13.6221 10.125 13.3057V8.43768C10.125 8.12126 10.3819 7.86475 10.6988 7.86475Z" fill="white"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <span class="text-primary fw-bold fs-18px">C220820250001 - Khuyến mại Thẻ tháng 8/2025 </span>
+  </div>
+
+  <div class="container-body" style="gap: 20px">
+    <!-- Information Section -->
+    <div class="paragraph d-flex flex-column" style="gap: 8px">
+      <div class="row">
+        <div class="paragraph-heading" style="gap: 10px">
+          <span class="text-primary fw-bold fs-16px">Thông tin nội dung thông báo</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <label class="fs-14px fw-bold">Tên campaign</label>
+        </div>
+        <div class="col-8">
+          <span class="fs-14px">Khuyến mại Thẻ tháng 8/2025</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <label class="fs-14px fw-bold">Template</label>
+        </div>
+        <div class="col-8">
+          <span class="fs-14px">T22082500001 - Khuyến mãi thẻ</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card border-0 w-100 h-auto overflow-hidden">
+      <div class="card-header border-bottom-0 d-flex align-items-center justify-content-between">
+        <span class="text-black fw-bolder fs-14px" style="line-height: 1.5;">Nội dung thông báo - App</span>
+        <button class="btn btn-link text-black p-0 m-0 acc-toggle collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#AppContent"
+                aria-expanded="false" aria-controls="AppContent">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="card-body collapse" id="AppContent">
+        <div class="gap-2 d-flex flex-column ">
+          <div class="row gx-3">
+            <div class="col-md-6 d-flex flex-column">
+              <label for="" class="form-label fw-bolder fs-14px">Ứng dụng gửi tin <span
+                class="text-danger">*</span></label>
+              <input type="text" class="form-control w-100" id="" placeholder="Nhập tiêu đề thông báo"
+                     value="Information">
+            </div>
+
+            <div class="col-md-6 d-flex flex-column">
+              <label for="" class="form-label fw-bolder fs-14px">Tab hiển thị thông báo <span
+                class="text-danger">*</span></label>
+              <input type="text" class="form-control w-100" id="" placeholder="Placeholder"
+                     value="Information">
+            </div>
+          </div>
+
+          <div>
+            <label for="" class="form-label fw-bolder fs-14px">Tiêu đề <span
+              class="text-danger">*</span></label>
+            <input type="text" class="form-control w-100" id="" placeholder="Nhập tiêu đề thông báo"
+                   value="lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+          </div>
+
+          <div class="thumbnail-upload">
+            <span class="thumbnail-upload-title fs-14px fw-bolder">Ảnh Thumbnail</span>
+            <div class="thumbnail-upload-body p-2 d-flex flex-column gap-2">
+              <div class="thumbnail-link d-flex gap-2 d-flex align-items-center">
+                <div class="image-thumbnail-icon rounded-2 d-flex justify-content-center align-items-center"
+                     style="width: 32px; height: 32px">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.5049 16.6145H4.45953C3.38286 16.6145 2.39828 16.0691 1.83161 15.1483C1.26495 14.2274 1.21536 13.1083 1.69703 12.1378L2.91536 9.69409C3.31203 8.90076 3.94953 8.40493 4.66495 8.32701C5.38036 8.24909 6.10995 8.60326 6.66245 9.29034L6.81828 9.48868C7.12995 9.87118 7.4912 10.0766 7.84536 10.0412C8.19953 10.0128 8.52536 9.75784 8.7662 9.32576L10.1049 6.91034C10.6574 5.91159 11.3941 5.39451 12.1945 5.42993C12.9879 5.47243 13.6679 6.06743 14.1212 7.11576L16.3383 12.2937C16.7491 13.2499 16.6499 14.3408 16.0762 15.212C15.5095 16.0974 14.5462 16.6145 13.5049 16.6145ZM4.86328 9.38951C4.83495 9.38951 4.80661 9.38951 4.77828 9.39659C4.42411 9.43201 4.09828 9.71534 3.86453 10.1758L2.6462 12.6195C2.32745 13.2499 2.36286 13.9937 2.7312 14.5958C3.09953 15.1978 3.7512 15.5591 4.45953 15.5591H13.4979C14.192 15.5591 14.8083 15.2262 15.1908 14.6453C15.5733 14.0645 15.637 13.3703 15.3608 12.7328L13.1437 7.55493C12.8745 6.91743 12.4991 6.52784 12.1379 6.51368C11.8049 6.49243 11.3729 6.84659 11.0329 7.44868L9.69411 9.86409C9.28328 10.6008 8.6387 11.0612 7.93745 11.1249C7.2362 11.1816 6.52078 10.8416 5.98953 10.1758L5.8337 9.97743C5.5362 9.58784 5.1962 9.38951 4.86328 9.38951Z"
+                          fill="#5D6573"/>
+                    <path d="M5.43701 6.698C3.97784 6.698 2.78076 5.508 2.78076 4.04175C2.78076 2.5755 3.97076 1.3855 5.43701 1.3855C6.90326 1.3855 8.09326 2.5755 8.09326 4.04175C8.09326 5.508 6.90326 6.698 5.43701 6.698ZM5.43701 2.448C4.55868 2.448 3.84326 3.16341 3.84326 4.04175C3.84326 4.92008 4.55868 5.6355 5.43701 5.6355C6.31534 5.6355 7.03076 4.92008 7.03076 4.04175C7.03076 3.16341 6.31534 2.448 5.43701 2.448Z"
+                          fill="#5D6573"/>
+                  </svg>
+                </div>
+                <a class="text-decoration-underline opacity-75 text-black fs-14px">https://example.com/image.jpg</a>
+              </div>
+              <!--                    img preview-->
+              <div class="image-preview" style="width: 140px; height: 140px;">
+                <img src="images/previewimg.jpg" alt="Image Preview"
+                     style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+            </div>
+          </div>
+
+
+          <div>
+            <label for="" class="form-label fw-bolder fs-14px">Nội dung tóm tắt <span
+              class="text-danger">*</span></label>
+            <input type="text" class="form-control w-100" id="" placeholder="Placeholder"
+                   value="lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+            <div class="letter-count w-100 align-items-end d-flex">
+                        <span class="letter-count w-100 d-flex align-items-end justify-content-end text-black-50 fw-medium"
+                              style="font-size: 12px;">
+                            0/200 kí tự
+                        </span>
+            </div>
+
+          </div>
+
+          <div>
+            <label for="" class="form-label fw-bolder fs-14px">Nội dung chi tiết <span
+              class="text-danger">*</span></label>
+            <input type="text" class="form-control w-100" id="" placeholder="Placeholder"
+                   value="lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+            <div class="letter-count w-100 align-items-end d-flex">
+                        <span class="letter-count w-100 d-flex align-items-end justify-content-end text-black-50 fw-medium"
+                              style="font-size: 12px;">
+                            0/2500 kí tự
+                        </span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="card border-0 w-100 h-auto overflow-hidden">
+      <div class="card-header border-bottom-0 d-flex align-items-center justify-content-between">
+        <span class="text-black fw-bolder fs-14px" style="line-height: 1.5;">Nội dung thông báo - SMS</span>
+        <button class="btn btn-link text-black p-0 m-0 acc-toggle collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#SMSContent"
+                aria-expanded="false" aria-controls="SMSContent">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5"
+                  stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="card-body collapse" id="SMSContent">
+        <div class="gap-2 d-flex flex-column ">
+
+          <div>
+            <label for="" class="form-label fw-bolder fs-14px">Nội dung chi tiết <span
+              class="text-danger">*</span></label>
+            <input type="text" class="form-control w-100" id="" placeholder="Placeholder"
+                   value="lorem ipsum dolor sit amet consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+            <div class="letter-count w-100 align-items-end d-flex">
+                        <span class="letter-count w-100 d-flex align-items-end justify-content-end text-black-50 fw-medium"
+                              style="font-size: 12px;">
+                            0/2500 kí tự
+                        </span>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Information Section -->
+
+    <div class="paragraph d-flex flex-column" style="gap: 8px">
+      <div class="row">
+        <div class="paragraph-heading" style="gap: 10px">
+          <span class="text-primary fw-bold fs-16">Thông tin danh sách người nhận</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <label class="fs-14px fw-bold">Người nhận</label>
+        </div>
+        <div class="col-4">
+          <span class="fs-14px">Theo danh sách</span>
+        </div>
+        <div class="col-4">
+          <div class="file-name d-flex align-items-center" style="gap: 8px;">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M3.66683 8.66675L1.3335 11.6667L1.66683 13.0001H11.6668C12.6668 12.0001 14.8002 9.80008 15.3335 9.00008C15.8668 8.20008 14.8891 7.77786 14.3335 7.66675H6.00016C4.9335 7.66675 4.00016 8.33341 3.66683 8.66675Z"
+                fill="#3692FF"/>
+              <path
+                d="M14.8828 8.59001C14.8828 8.39852 14.7378 8.30278 14.4478 8.30278H5.51892C5.30007 8.30278 5.06618 8.36159 4.81724 8.47922C4.5683 8.59685 4.37271 8.74047 4.23046 8.91007L1.81768 11.8891C1.71919 12.0204 1.66995 12.1299 1.66995 12.2174C1.66995 12.4089 1.81494 12.5046 2.10491 12.5046H11.0338C11.2527 12.5046 11.488 12.4444 11.7396 12.3241C11.9913 12.2037 12.1855 12.0587 12.3223 11.8891L14.7351 8.91007C14.8336 8.78971 14.8828 8.68302 14.8828 8.59001ZM5.51892 7.25231H11.8217V5.93923C11.8217 5.72039 11.7451 5.53437 11.5919 5.38118C11.4387 5.22798 11.2527 5.15139 11.0338 5.15139H6.30676C6.08792 5.15139 5.9019 5.07479 5.7487 4.9216C5.59551 4.76841 5.51892 4.58239 5.51892 4.36354V3.83831C5.51892 3.61946 5.44232 3.43344 5.28913 3.28025C5.13593 3.12706 4.94991 3.05046 4.73107 3.05046H2.10491C1.88606 3.05046 1.70005 3.12706 1.54685 3.28025C1.39366 3.43344 1.31706 3.61946 1.31706 3.83831V10.8387L3.41799 8.25354C3.65872 7.96356 3.97605 7.7242 4.36997 7.53545C4.7639 7.34669 5.14688 7.25231 5.51892 7.25231ZM15.9333 8.59001C15.9333 8.92922 15.8074 9.25749 15.5558 9.57482L13.1348 12.5539C12.8995 12.8438 12.5822 13.0832 12.1828 13.272C11.7834 13.4607 11.4004 13.5551 11.0338 13.5551H2.10491C1.60156 13.5551 1.16934 13.3745 0.808246 13.0134C0.44715 12.6523 0.266602 12.2201 0.266602 11.7168V3.83831C0.266602 3.33496 0.44715 2.90274 0.808246 2.54164C1.16934 2.18055 1.60156 2 2.10491 2H4.73107C5.23442 2 5.66664 2.18055 6.02773 2.54164C6.38883 2.90274 6.56938 3.33496 6.56938 3.83831V4.10093H11.0338C11.5372 4.10093 11.9694 4.28147 12.3305 4.64257C12.6916 5.00367 12.8722 5.43589 12.8722 5.93923V7.25231H14.4478C14.7433 7.25231 15.0141 7.31933 15.2603 7.45338C15.5065 7.58742 15.6898 7.78028 15.8102 8.03195C15.8922 8.20703 15.9333 8.39305 15.9333 8.59001Z"
+                fill="#3692FF"/>
+            </svg>
+
+            <span class="text-info fs-14px">Filedanhsach.xlsx</span>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <label class="fs-14px fw-bold">Kênh gửi tin</label>
+        </div>
+        <div class="col-4 d-flex flex-column">
+          <span class="fs-14px">SMS</span>
+          <span class="fs-14px">App (LPBank)</span>
+        </div>
+        <div class="col-4 d-flex flex-column">
+          <div>
+            <span class="fs-14px">Số lượng:&nbsp;</span>
+            <p class="fs-14px fw-bold d-inline">10,000</p>
+          </div>
+          <div>
+            <span class="fs-14px">Số lượng:&nbsp;</span>
+            <p class="fs-14px fw-bold d-inline">10,000</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="paragraph d-flex flex-column" style="gap: 8px">
+      <div class="row">
+        <div class="paragraph-heading" style="gap: 10px">
+          <span class="text-primary fw-bold fs-16">Thông tin thời gian gửi</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <label class="fs-14px fw-bold">Lập lịch gửi</label>
+        </div>
+        <div class="col-8">
+          <span class="fs-14px">Gửi định kỳ - Ngày 5 - Hàng tháng</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <label class="fs-14px fw-bold">Khoảng thời gian gửi</label>
+        </div>
+        <div class="col-8">
+          <span class="fs-14px">01/01/2026 - 01/01/2027</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <label class="fs-14px fw-bold">Thời gian bắt đầu gửi</label>
+        </div>
+        <div class="col-8">
+          <span class="fs-14px">01/01/2026 09:00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="paragraph d-flex flex-column" style="gap: 8px">
+      <div class="row">
+        <div class="paragraph-heading" style="gap: 10px">
+          <span class="text-primary fw-bold fs-16">Trạng thái gửi tin</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <label class="fs-14px fw-bold">Trạng thái PD</label>
+        </div>
+        <div class="col-8">
+          <span class="fs-14px">Đã duyệt</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <label class="fs-14px fw-bold">Trạng thái XL</label>
+        </div>
+        <div class="col-8">
+          <span class="fs-14px">Chờ xử lý</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <label class="fs-14px fw-bold">Ngày gửi tin gần nhất</label>
+        </div>
+        <div class="col-sm-2">
+          <span class="fs-14px">01/09/2025 10:45</span>
+        </div>
+        <div class="col-4">
+          <a href="" class="fs-14px text-info fw-bold fst-italic ">Xem thống kê tin gửi</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-group gap-12px d-flex justify-content-end">
+      <button type="button" class="btn btn-secondary align-items-center d-flex" (click)="goToList()">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M7.17758 14.115C7.03508 14.115 6.89258 14.0625 6.78008 13.95L2.22758 9.39753C2.01008 9.18003 2.01008 8.82003 2.22758 8.60253L6.78008 4.05003C6.99758 3.83253 7.35758 3.83253 7.57508 4.05003C7.79258 4.26753 7.79258 4.62753 7.57508 4.84503L3.42008 9.00003L7.57508 13.155C7.79258 13.3725 7.79258 13.7325 7.57508 13.95C7.47008 14.0625 7.32008 14.115 7.17758 14.115Z"
+            fill="#6D371A"/>
+          <path
+            d="M15.3749 9.5625H2.75244C2.44494 9.5625 2.18994 9.3075 2.18994 9C2.18994 8.6925 2.44494 8.4375 2.75244 8.4375H15.3749C15.6824 8.4375 15.9374 8.6925 15.9374 9C15.9374 9.3075 15.6824 9.5625 15.3749 9.5625Z"
+            fill="#6D371A"/>
+        </svg>
+      </button>
+
+      <button type="submit" class="btn btn-light-red btn-fixed-size fs-14px fw-semibold text-white">Dừng</button>
+    </div>
+  </div>
+</div>

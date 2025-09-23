@@ -1,0 +1,25 @@
+<div *ngIf="currentStep === 1">
+  <app-template-step1
+    [formGroup]="templateForm"
+    [notificationTypes]="notificationTypes"
+    [templatesTypes]="templatesTypes"
+    [businessTypes]="businessTypes"
+    (next)="goNext()"
+  ></app-template-step1>
+</div>
+
+<div *ngIf="currentStep === 2">
+  <app-template-step2
+    (next)="goNext()"
+    (back)="goBack()"
+  ></app-template-step2>
+</div>
+
+<div *ngIf="currentStep === 3">
+  <app-template-step3
+    (back)="goBack()"
+    (submit)="onSubmit()"
+  ></app-template-step3>
+</div>
+
+

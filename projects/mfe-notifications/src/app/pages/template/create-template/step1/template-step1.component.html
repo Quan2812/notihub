@@ -1,0 +1,101 @@
+<div class="main-container">
+  <div class="container-header">
+    <div class="heading-left">
+      <div class="wrapper">
+        <h4>Tạo template</h4>
+      </div>
+    </div>
+    <div class="step-bar">
+      <div class="step-element processing">
+        <div class="frame">
+          <div class="rectangle"></div>
+          <div class="step-icon">
+            <div class="checks">
+              <span>1</span>
+            </div>
+          </div>
+          <div class="rectangle"></div>
+        </div>
+        <div class="frame-text">
+          <span class="">Thông tin chung</span>
+        </div>
+      </div>
+
+      <div class="step-element upcomming">
+        <div class="frame">
+          <div class="rectangle"></div>
+          <div class="step-icon">
+            <div class="checks">
+              <span>2</span>
+            </div>
+          </div>
+          <div class="rectangle after"></div>
+        </div>
+        <div class="frame-text">
+          <span class="">Nội dung đa kênh</span>
+        </div>
+      </div>
+
+      <div class="step-element upcomming">
+        <div class="frame">
+          <div class="rectangle"></div>
+          <div class="step-icon">
+            <div class="checks">
+              <span>3</span>
+            </div>
+          </div>
+          <div class="rectangle"></div>
+        </div>
+        <div class="frame-text">
+          <span class="">Xác nhận</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container-body">
+    <form class="form-card" [formGroup]="formGroup">
+      <div class="input-section">
+        <label>{{TEXTS.LABELS.TEMPLATE_NAME}}<span class="required"> *</span></label>
+        <input type="text"
+               id="templateName"
+               type="text"
+               formControlName="TEMPLATE_NAME"
+               placeholder="Placeholder"
+        />
+      </div>
+
+      <div class="dropdown-section">
+        <div class="dropdown-group">
+          <label>{{TEXTS.LABELS.TEMPLATE_TYPE}}</label>
+          <select class="select-box" id="templateType" formControlName="TEMPLATE_TYPE" required>
+            <option value="" disabled selected hidden>Chọn từ danh sách</option>
+            <option *ngFor="let t of templatesTypes" [value]="t">{{ t }}</option>
+          </select>
+        </div>
+        <div class="dropdown-group">
+          <label>{{TEXTS.LABELS.NOTIFICATION_TYPE}}</label>
+          <select class="select-box" id="notificationType" formControlName="NOTIFICATION_TYPE" required>
+            <option value="" disabled selected hidden>Chọn từ danh sách</option>
+            <option *ngFor="let n of notificationTypes" [value]="n">
+              {{ n }}
+            </option>
+          </select>
+        </div>
+        <div class="dropdown-group">
+          <label>{{TEXTS.LABELS.BUSINESS_TYPE}}</label>
+          <select class="select-box" id="businessType" formControlName="BUSINESS_TYPE" required>
+            <option value="" disabled selected hidden>Chọn từ danh sách</option>
+            <option *ngFor="let b of businessTypes" [value]="b">{{ b }}</option>
+          </select>
+        </div>
+      </div>
+      <div class="button-section">
+        <div type="button" class="continue-button" (click) = "onContinue()" >
+          <span class="button-text">{{TEXTS.CONTINUE_BUTTON}}</span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,272 @@
+<div class="main-container h-auto">
+  <div class="container-header d-flex flex-column gap-2">
+
+    <div class="header-title d-flex flex-column gap-4 m-0">
+      <div class="gap-3 d-flex flex-column m-0">
+        <h4 class="fw-medium m-0" style="opacity: 85%; font-size: 20px; line-height: 28px;">Tạo Campaign</h4>
+      </div>
+    </div>
+
+    <div class="step-bar">
+      <div class="step-element finished">
+        <div class="frame">
+          <div class="rectangle none"></div>
+          <div class="step-icon">
+            <div class="checks">
+
+              <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.78658 0.154651C10.0463 0.381951 10.0726 0.776801 9.84539 1.03658L4.37664 7.28656C4.15014 7.54537 3.75714 7.57262 3.49716 7.3475L0.215914 4.50662C-0.0450484 4.28069 -0.0734358 3.88594 0.152502 3.625C0.378439 3.36406 0.773151 3.33562 1.03411 3.56156L3.84533 5.99556L8.90464 0.213445C9.13195 -0.0463298 9.52683 -0.0726548 9.78658 0.154651Z"
+                      fill="white"/>
+              </svg>
+
+            </div>
+          </div>
+          <div class="rectangle"></div>
+        </div>
+        <div class="frame-text">
+          <span class="">Tạo nội dung</span>
+        </div>
+      </div>
+
+      <div class="step-element finished">
+        <div class="frame">
+          <div class="rectangle"></div>
+          <div class="step-icon">
+            <div class="checks">
+
+              <svg width="10" height="8" viewBox="0 0 10 8" fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.78658 0.154651C10.0463 0.381951 10.0726 0.776801 9.84539 1.03658L4.37664 7.28656C4.15014 7.54537 3.75714 7.57262 3.49716 7.3475L0.215914 4.50662C-0.0450484 4.28069 -0.0734358 3.88594 0.152502 3.625C0.378439 3.36406 0.773151 3.33562 1.03411 3.56156L3.84533 5.99556L8.90464 0.213445C9.13195 -0.0463298 9.52683 -0.0726548 9.78658 0.154651Z"
+                      fill="white"/>
+              </svg>
+
+            </div>
+          </div>
+          <div class="rectangle"></div>
+        </div>
+        <div class="frame-text">
+          <span class="">Danh sách người nhận</span>
+        </div>
+      </div>
+
+      <div class="step-element processing">
+        <div class="frame">
+          <div class="rectangle"></div>
+          <div class="step-icon">
+            <div class="checks">
+              <span>3</span>
+            </div>
+          </div>
+          <div class="rectangle after"></div>
+        </div>
+        <div class="frame-text">
+          <span class="">Thời gian gửi</span>
+        </div>
+      </div>
+
+      <div class="step-element upcomming">
+        <div class="frame">
+          <div class="rectangle"></div>
+          <div class="step-icon">
+            <div class="checks">
+              <span>4</span>
+            </div>
+          </div>
+          <div class="rectangle none"></div>
+        </div>
+        <div class="frame-text">
+          <span class="">Xác nhận</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-body p-4 gap-20px h-auto">
+    <div class="selection row w-100">
+      <!-- radio button-->
+      <div class="col-3 col-md-3 d-flex gap-2">
+        <input type="radio" name="select-type" id="radio-ngay" class="form-check-input" value="gui-ngay">
+        <label for="radio-ngay">Gửi ngay</label>
+      </div>
+      <div class="col-3 col-md-3 d-flex gap-2">
+        <input type="radio" name="select-type" id="radio-vao-luc" class="form-check-input" value="gui-vao-luc">
+        <label for="radio-vao-luc">Gửi vào lúc</label>
+      </div>
+      <div class="col-3 col-md-3 d-flex gap-2">
+        <input type="radio" name="select-type" id="radio-dinh-ky" class="form-check-input" value="gui-dinh-ky" checked>
+        <label for="radio-dinh-ky">Gửi định kỳ</label>
+      </div>
+      <div class="col-3 col-md-3 d-flex gap-2">
+      </div>
+    </div>
+
+    <div class="form-content w-100 d-none flex-column gap-20px" id="gui-ngay">
+      <div class="d-flex gap-3 justify-content-end w-100 mt-4">
+        <button class="btn btn-secondary d-flex justify-content-center align-items-center" style="width: 58px;">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7.17758 14.115C7.03508 14.115 6.89258 14.0625 6.78008 13.95L2.22758 9.39753C2.01008 9.18003 2.01008 8.82003 2.22758 8.60253L6.78008 4.05003C6.99758 3.83253 7.35758 3.83253 7.57508 4.05003C7.79258 4.26753 7.79258 4.62753 7.57508 4.84503L3.42008 9.00003L7.57508 13.155C7.79258 13.3725 7.79258 13.7325 7.57508 13.95C7.47008 14.0625 7.32008 14.115 7.17758 14.115Z"
+              fill="#6D371A"/>
+            <path
+              d="M15.3749 9.5625H2.75244C2.44494 9.5625 2.18994 9.3075 2.18994 9C2.18994 8.6925 2.44494 8.4375 2.75244 8.4375H15.3749C15.6824 8.4375 15.9374 8.6925 15.9374 9C15.9374 9.3075 15.6824 9.5625 15.3749 9.5625Z"
+              fill="#6D371A"/>
+          </svg>
+        </button>
+        <button class="btn btn-primary d-flex justify-content-center align-items-center fw-semibold"
+                style="width: 134px;">Tiếp tục
+        </button>
+
+
+      </div>
+    </div>
+
+    <div class="form-content w-100 d-none flex-column gap-20px" id="gui-vao-luc">
+      <div class="row g-4 w-100">
+        <div class="col">
+          <!--                first date-->
+          <div class="input-group d-flex flex-column">
+            <label for="first-date" class="form-label fs-14px fw-bolder">Ngày gửi đầu tiên vào <span
+              class="text-danger">*</span></label>
+            <!--                    input date-->
+            <input type="date" class="form-control w-100" id="first-date">
+          </div>
+        </div>
+        <div class="col">
+          <!--                select time-->
+          <div class="input-group d-flex flex-column">
+            <label for="select-time" class="form-label fs-14px fw-bolder">Vào lúc <span
+              class="text-danger">*</span></label>
+            <!--                    input time-->
+            <input type="time" class="form-control w-100" id="select-time">
+          </div>
+        </div>
+        <div class="col-2 align-items-center d-flex justify-content-end">
+          <button class="mt-5 fst-italic border-0 bg-transparent text-decoration-underline"
+                  style="font-size:16px;color: dodgerblue;">
+            Kiểm tra lịch trùng
+          </button>
+        </div>
+      </div>
+      <div class="d-flex gap-3 justify-content-end w-100 mt-4">
+        <button class="btn btn-secondary d-flex justify-content-center align-items-center" style="width: 58px;">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7.17758 14.115C7.03508 14.115 6.89258 14.0625 6.78008 13.95L2.22758 9.39753C2.01008 9.18003 2.01008 8.82003 2.22758 8.60253L6.78008 4.05003C6.99758 3.83253 7.35758 3.83253 7.57508 4.05003C7.79258 4.26753 7.79258 4.62753 7.57508 4.84503L3.42008 9.00003L7.57508 13.155C7.79258 13.3725 7.79258 13.7325 7.57508 13.95C7.47008 14.0625 7.32008 14.115 7.17758 14.115Z"
+              fill="#6D371A"/>
+            <path
+              d="M15.3749 9.5625H2.75244C2.44494 9.5625 2.18994 9.3075 2.18994 9C2.18994 8.6925 2.44494 8.4375 2.75244 8.4375H15.3749C15.6824 8.4375 15.9374 8.6925 15.9374 9C15.9374 9.3075 15.6824 9.5625 15.3749 9.5625Z"
+              fill="#6D371A"/>
+          </svg>
+        </button>
+        <button class="btn btn-primary d-flex justify-content-center align-items-center fw-semibold"
+                style="width: 134px;">Tiếp tục
+        </button>
+
+
+      </div>
+    </div>
+
+    <div class="form-content w-100 d-flex flex-column gap-20px" id="gui-dinh-ky">
+      <div class="row g-4 w-100">
+        <div class="col">
+          <!--                select date-->
+          <div class="input-group d-flex flex-column">
+            <label for="date-start" class="form-label fs-14px fw-bolder">Ngày bắt đầu <span
+              class="text-danger">*</span></label>
+            <input type="date" class="form-control w-100" id="date-start">
+          </div>
+        </div>
+        <div class="col">
+          <!--            end date-->
+          <div class="input-group d-flex flex-column">
+            <label for="date-end" class="form-label fs-14px fw-bolder">Ngày kết thúc <span
+              class="text-danger">*</span></label>
+            <input type="date" class="form-control w-100" id="date-end">
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 w-100">
+        <div class="col">
+          <!--                select date-->
+          <div class="input-group d-flex flex-column">
+            <label for="date-start" class="form-label fs-14px fw-bolder">Chu kỳ <span
+              class="text-danger">*</span></label>
+            <!--                    select cycle-->
+            <select class="form-select form-control w-100" aria-label="Default select example">
+              <option selected>Chọn chu kỳ</option>
+              <option value="1">Hàng ngày</option>
+              <option value="2">Hàng tuần</option>
+              <option value="3">Hàng tháng</option>
+            </select>
+          </div>
+        </div>
+        <div class="col">
+          <!--            end date-->
+          <div class="input-group d-flex flex-column">
+            <label for="date-end" class="form-label fs-14px fw-bolder">Tần suất <span
+              class="text-danger">*</span></label>
+            <!--                    select -->
+            <select class="form-select form-control w-100" aria-label="Default select example">
+              <option selected>Chọn tần suất</option>
+              <option value="1">1 lần</option>
+              <option value="2">2 lần</option>
+              <option value="3">3 lần</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 w-100">
+        <div class="col">
+          <!--                first date-->
+          <div class="input-group d-flex flex-column">
+            <label for="first-date" class="form-label fs-14px fw-bolder">Ngày gửi đầu tiên vào <span
+              class="text-danger">*</span></label>
+            <!--                    input date-->
+            <input type="date" class="form-control w-100" id="first-date" disabled>
+          </div>
+        </div>
+        <div class="col">
+          <!--                select time-->
+          <div class="input-group d-flex flex-column">
+            <label for="select-time" class="form-label fs-14px fw-bolder">Vào lúc <span
+              class="text-danger">*</span></label>
+            <!--                    input time-->
+            <input type="time" class="form-control w-100" id="select-time">
+          </div>
+        </div>
+        <div class="col-2 align-items-center d-flex justify-content-end">
+          <button class="mt-5 fst-italic border-0 bg-transparent text-decoration-underline"
+                  style="font-size:16px;color: dodgerblue;">
+            Kiểm tra lịch trùng
+          </button>
+        </div>
+      </div>
+      <div class="d-flex gap-3 justify-content-end w-100 mt-4">
+        <button (click)="onBack()" class="btn btn-secondary d-flex justify-content-center align-items-center" style="width: 58px;">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M7.17758 14.115C7.03508 14.115 6.89258 14.0625 6.78008 13.95L2.22758 9.39753C2.01008 9.18003 2.01008 8.82003 2.22758 8.60253L6.78008 4.05003C6.99758 3.83253 7.35758 3.83253 7.57508 4.05003C7.79258 4.26753 7.79258 4.62753 7.57508 4.84503L3.42008 9.00003L7.57508 13.155C7.79258 13.3725 7.79258 13.7325 7.57508 13.95C7.47008 14.0625 7.32008 14.115 7.17758 14.115Z"
+              fill="#6D371A"/>
+            <path
+              d="M15.3749 9.5625H2.75244C2.44494 9.5625 2.18994 9.3075 2.18994 9C2.18994 8.6925 2.44494 8.4375 2.75244 8.4375H15.3749C15.6824 8.4375 15.9374 8.6925 15.9374 9C15.9374 9.3075 15.6824 9.5625 15.3749 9.5625Z"
+              fill="#6D371A"/>
+          </svg>
+        </button>
+        <button (click)="onContinue()" class="btn btn-primary d-flex justify-content-center align-items-center fw-semibold"
+                style="width: 134px;">Tiếp tục
+        </button>
+
+
+      </div>
+    </div>
+
+
+  </div>
+
+
+</div>

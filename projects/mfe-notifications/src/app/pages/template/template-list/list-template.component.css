@@ -1,0 +1,432 @@
+/* ===================================================================
+   RESET & BASE STYLES
+   =================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1440px;
+    opacity: 1;
+    background-color: #F7F7F7;
+    font-family: "Roboto", sans-serif;
+}
+
+.roboto {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+/* ===================================================================
+   PLACEHOLDERS & TEXT INPUTS
+   =================================================================== */
+input::placeholder,
+textarea::placeholder {
+    color: #8E96A3;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/* ===================================================================
+   MAIN LAYOUT CONTAINERS
+   =================================================================== */
+.main-container {
+    width: 100%;
+    padding: 8px;
+    top: 63px;
+    left: 217px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-header {
+    width: 100%;
+    padding: 8px 24px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 2px 0px #00000040;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.container-body {
+    width: 100%;
+    height: 1031px;
+    padding: 16px 24px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    border-radius: 12px;
+    gap: 8px;
+}
+
+/* ===================================================================
+   BREADCRUMB NAVIGATION
+   =================================================================== */
+.breadcrumb {
+    width: 343px;
+    height: 22px;
+}
+
+.breadcrumb-item {
+    width: 38px;
+    height: 22px;
+    opacity: 0.5;
+}
+
+.breadcrumb-item.active {
+    width: 91px;
+    opacity: 1;
+}
+
+.separator {
+    width: 22px;
+    height: 22px;
+    padding: 0 8px;
+    color: #8E96A3;
+}
+
+/* ===================================================================
+   HEADER & HEADING
+   =================================================================== */
+.heading-left {
+    width: 808px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.heading-left .wrapper {
+    width: 183px;
+    height: 28px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.wrapper h1 {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000D9;
+}
+
+/* ===================================================================
+   FORM LAYOUT & STRUCTURE
+   =================================================================== */
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+}
+
+.form-group-half {
+    width: 100%;
+    height: 68px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-group-half .form-group {
+    width: 50%;
+    height: 68px;
+}
+
+/* ===================================================================
+   FORM CONTROLS & INPUT STYLING
+   =================================================================== */
+.form-group label {
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.form-control {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    width: 100%;
+    color: #363A4A;
+    padding: 9px 16px;
+    border-radius: 8px;
+    border: 1px solid #DDDEE4;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.warning-text,
+.required {
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    color: #D92D20;
+}
+
+.summary-count {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #8E96A3;
+    align-self: flex-end;
+}
+
+/* ===================================================================
+   SELECT BOX STYLING
+   =================================================================== */
+.select-box {
+    width: 100%;
+    padding: 9px 36px 9px 16px;
+    border-radius: 8px;
+    border: 1px solid #DDDEE4;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8E96A3;
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.36189 7.86201C5.62224 7.60166 6.04435 7.60166 6.3047 7.86201L9.99996 11.5573L13.6952 7.86201C13.9556 7.60166 14.3777 7.60166 14.638 7.86201C14.8984 8.12236 14.8984 8.54447 14.638 8.80482L9.99996 13.4429L5.36189 8.80482C5.10154 8.54447 5.10154 8.12236 5.36189 7.86201Z" fill="%238E96A3"/></svg>') no-repeat right 12px center;
+}
+
+.select-box:valid {
+    color: #363A4A;
+}
+
+/* ===================================================================
+   BUTTONS & ACTIONS
+   =================================================================== */
+.btn-secondary,
+.btn-primary,
+.btn-outline-primary {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 9px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.btn-secondary {
+    font-weight: 400;
+    color: #6D371A;
+    background: transparent;
+    border: 0;
+    width: 120px;
+}
+
+.btn-secondary:hover {
+    background-color: #fee7c990;
+    color: #6d371ae4;
+}
+
+.btn-primary {
+    font-weight: 600;
+    color: #FFFFFF;
+    background: #6D371A;
+    border: 0;
+    width: 134px;
+}
+
+.btn-primary:hover {
+    background-color: #5c3017;
+    transition: background-color 0.3s;
+}
+
+.btn-outline-primary {
+    font-weight: 600;
+    color: #6D371A;
+    background: transparent;
+    border: 1px solid #6D371A;
+    width: 134px;
+}
+
+.btn-outline-primary:hover {
+    background-color: #6d371a;
+    color: #FFFFFF;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    padding: 6px;
+    background: #E5E6EB;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-icon:hover {
+    background-color: #d4d6dd;
+}
+
+/* ===================================================================
+   SEARCH & FILTER COMPONENTS
+   =================================================================== */
+.input-group {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.form-group-1 {
+    width: 33.33%;
+}
+
+.form-group-2 {
+    width: 67.8%;
+}
+
+.button-group {
+    width: 100%;
+    padding: 16px 0 8px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+/* ===================================================================
+   TABLE COMPONENTS
+   =================================================================== */
+.total-count {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #5D6573;
+}
+
+.total-count span {
+    font-weight: 700;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.custom-table th,
+.custom-table td {
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #363A4A;
+}
+
+.custom-table th {
+    background: #F1F1F4;
+    font-weight: 600;
+    padding: 13px 8px;
+    font-size: 12px;
+    line-height: 20px;
+    white-space: nowrap;
+    box-shadow: 0px 1px 0px 0px #0000000A;
+}
+
+.custom-table td {
+    border-bottom: 1px solid #E3E5E8;
+    padding: 13px 4px;
+    font-size: 13px;
+}
+
+.first-column {
+    width: 44px;
+    padding: 10px 12px !important;
+}
+
+.first-column input[type="checkbox"] {
+    display: flex;
+}
+
+.action-column {
+    width: 88px !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ===================================================================
+   PAGINATION COMPONENTS
+   =================================================================== */
+.pagination {
+    width: 100%;
+    height: 40px;
+    padding: 8px 24px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.page-select {
+    width: 80%;
+    padding-left: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.page-select .page-btn {
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid #DDDEE4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.page-select .page-btn.active {
+    background: #6D371A;
+    color: #FFFFFF;
+    border: 0;
+}
+
+.rows-per-page {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.rows-per-page .select-box {
+    width: 160px;
+    height: 40px;
+    padding: 9px 12px 9px 16px;
+    border-radius: 8px;
+    border: 1px solid #DDDEE4;
+}

@@ -1,0 +1,26 @@
+<div *ngIf="currentStep === 1">
+  <app-campaign-step1
+    [formGroup]="step1Form"
+    (next)="goNext()"
+  ></app-campaign-step1>
+</div>
+
+<div *ngIf="currentStep === 2">
+  <app-campaign-step2
+    (next)="goNext()"
+    (back)="goBack()"
+  ></app-campaign-step2>
+</div>
+
+<div *ngIf="currentStep === 3">
+  <app-campaign-step3
+    (next)="goNext()"
+    (back)="goBack()"
+  ></app-campaign-step3>
+</div>
+
+<div *ngIf="currentStep === 4">
+  <app-campaign-step4
+    (back)="goBack()"
+  ></app-campaign-step4>
+</div>

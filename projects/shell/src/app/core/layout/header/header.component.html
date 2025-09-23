@@ -1,0 +1,21 @@
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <div class="title">Notification Hub</div>
+    <ng-content></ng-content>
+  </div>
+  <div class="top-bar-right">
+    <div class="search-box">
+      <mat-icon>search</mat-icon>
+      <input type="text" placeholder="Search" />
+    </div>
+    <div class="user" (click)="toggleMenu()">
+      <img [src]="avatarUrl" alt="avatar" />
+      <span>{{ userName }}</span>
+
+      <div class="dropdown" *ngIf="menuOpen">
+        <button (click)="logout()">Đăng xuất</button>
+      </div>
+    </div>
+  </div>
+</div>
+

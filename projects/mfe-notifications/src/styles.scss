@@ -1,2 +1,29 @@
-/* You can add global styles to this file, and also import other style files */
-@use '../../../src/styles/theme.scss';
+@import 'ngx-toastr/toastr';
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/MaterialIcons-Regular.woff2') format('woff2');
+  }
+
+
+/* Đây là class mặc định Angular Material dùng */
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px; /* bạn có thể điều chỉnh */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+  
+  

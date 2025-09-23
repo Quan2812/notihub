@@ -22,7 +22,9 @@
 }
 
 * { box-sizing: border-box; }
-html, body { height: 100%; }
+html, body { height: 100%; background-color: #ef4444 !important; }
 body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial; color: var(--text); background: var(--bg); }
 a { color: var(--primary); text-decoration: none; }
 h1,h2,h3 { margin: 0 0 var(--sp-3); }
+
+

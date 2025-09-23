@@ -1,0 +1,288 @@
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+    width: 100%;
+    opacity: 1;
+    padding-top: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+    gap: 10px;
+    top: 63px;
+    left: 217px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    margin: 0 auto;
+}
+
+.container-header {
+    width: 100%;
+    opacity: 1;
+    padding-top: 8px;
+    padding-right: 24px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    background-color: #FFFFFF;
+    box-shadow: 2px 2px 2px 0px #00000040;
+    box-sizing: border-box;
+}
+
+.container-body {
+    width: 100%;
+    height: auto;
+    angle: 0deg;
+    opacity: 1;
+    padding-top: 16px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    gap: 8px;
+    border-radius: 12px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: flex-start;
+}
+
+.breadcrumb {
+  height: 22px;
+}
+
+.breadcrumb-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  opacity: 0.5;
+  vertical-align: middle;
+}
+
+.breadcrumb-item.active {
+  opacity: 1;
+}
+
+.separator {
+  padding: 0 8px;
+}
+
+.heading-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.heading-left .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.wrapper h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.step-bar {
+  width: 1160px;
+  height: 44px;
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.step-element {
+  width: 386.6666564941406px;
+  height: 44px;
+  opacity: 1;
+}
+
+.step-icon {
+  width: 22px;
+  height: 22px;
+  angle: 0 deg;
+  opacity: 1;
+  gap: 10px;
+  border-radius: 20px;
+  padding: 6px;
+  background: #6d371a;
+}
+
+.step-element .frame {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.step-element .frame .rectangle {
+  flex: 1;
+  height: 1px;
+  background: #6d371a;
+}
+
+.step-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 20px;
+  padding: 6px;
+  background: #6d371a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checks svg {
+  width: 10px;
+  height: 7.5px;
+  fill: #ffffff;
+}
+
+.frame-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame-text span {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #363a4a;
+}
+
+.processing .step-icon {
+  background: #ffffff;
+  border: 1px solid #6d371a;
+}
+
+.processing .step-icon .checks span {
+  font-weight: 600;
+  font-size: 12px;
+  color: #6d371a;
+}
+
+.processing .rectangle.after {
+  background: #dddee4;
+}
+
+.upcomming .step-icon {
+  background: #e5e6eb;
+}
+
+.upcomming .frame .rectangle {
+  background: #dddee4;
+}
+
+.upcomming .step-icon .checks span,
+.upcomming .frame-text span {
+  color: #8e96a3;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.required {
+  color: #e14851;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.form-card {
+  padding: 16px 24px;
+  border-radius: 12px;
+  border: 1px solid #dddee4;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-section label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.input-section input {
+  width: 100%;
+  height: 40px;
+  padding: 9px 16px;
+  border-radius: 8px;
+  border: 1px solid #dddee4;
+}
+
+.dropdown-section {
+  display: flex;
+  gap: 20px;
+}
+
+.dropdown-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.dropdown-group label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.dropdown-group select {
+  height: 40px;
+  padding: 9px 12px 9px 16px;
+  border-radius: 8px;
+  border: 1px solid #dddee4;
+  background: #ffffff;
+  color: #8e96a3;
+}
+
+.button-section {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.continue-button {
+  height: 42px;
+  padding: 9px 20px;
+  border-radius: 8px;
+  color: #ffffff;
+  background: #6d371a;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.continue-button:hover {
+  background-color: #5a2e15;
+  cursor: pointer;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
